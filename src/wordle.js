@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { AlertCircle, CheckCircle } from 'lucide-react';
 
 const WORD_LENGTH = 5;
@@ -24,19 +24,7 @@ function Wordle({ selectedDate, puzzleData }) {
       .catch(error => console.error('Error loading valid words:', error));
   }, []);
 
-  // Load saved progress from cookie
-  useEffect(() => {
-    loadProgress();
-  }, [selectedDate]);
-
-  // Save progress to cookie whenever guesses change
-  useEffect(() => {
-    if (guesses.length > 0) {
-      saveProgress();
-    }
-  }, [guesses]);
-
-  const loadProgress = () => {
+  const loadProgress = useCallback(() => {
     try {
       const cookies = document.cookie.split('; ');
       const progressCookie = cookies.find(c => c.startsWith('cfm_progress='));
@@ -67,9 +55,9 @@ function Wordle({ selectedDate, puzzleData }) {
     } catch (error) {
       console.error('Error loading progress:', error);
     }
-  };
+  }, [selectedDate, solution]);
 
-  const saveProgress = () => {
+  const saveProgress = useCallback(() => {
     try {
       const cookies = document.cookie.split('; ');
       const progressCookie = cookies.find(c => c.startsWith('cfm_progress='));
@@ -92,21 +80,21 @@ function Wordle({ selectedDate, puzzleData }) {
     } catch (error) {
       console.error('Error saving progress:', error);
     }
-  };
+  }, [selectedDate, guesses]);
 
-  const handleKeyPress = (e) => {
-    if (gameStatus !== 'playing') return;
+  // Load saved progress from cookie
+  useEffect(() => {
+    loadProgress();
+  }, [loadProgress]);
 
-    if (e.key === 'Enter') {
-      submitGuess();
-    } else if (e.key === 'Backspace') {
-      setCurrentGuess(prev => prev.slice(0, -1));
-    } else if (/^[a-zA-Z]$/.test(e.key) && currentGuess.length < WORD_LENGTH) {
-      setCurrentGuess(prev => (prev + e.key).toUpperCase());
+  // Save progress to cookie whenever guesses change
+  useEffect(() => {
+    if (guesses.length > 0) {
+      saveProgress();
     }
-  };
+  }, [saveProgress, guesses.length]);
 
-  const submitGuess = () => {
+  const submitGuess = useCallback(() => {
     if (currentGuess.length !== WORD_LENGTH) {
       setMessage('Word must be 5 letters');
       setTimeout(() => setMessage(''), 2000);
@@ -133,7 +121,24 @@ function Wordle({ selectedDate, puzzleData }) {
     } else {
       setMessage('');
     }
-  };
+  }, [currentGuess, validWords, solution, guesses]);
+
+  const handleKeyPress = useCallback((e) => {
+    if (gameStatus !== 'playing') return;
+
+    if (e.key === 'Enter') {
+      submitGuess();
+    } else if (e.key === 'Backspace') {
+      setCurrentGuess(prev => prev.slice(0, -1));
+    } else if (/^[a-zA-Z]$/.test(e.key) && currentGuess.length < WORD_LENGTH) {
+      setCurrentGuess(prev => (prev + e.key).toUpperCase());
+    }
+  }, [gameStatus, currentGuess, submitGuess]);
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, [handleKeyPress]);
 
   const getLetterStatus = (letter, position, word) => {
     // First, check if it's in the correct position
@@ -211,11 +216,6 @@ function Wordle({ selectedDate, puzzleData }) {
       </div>
     );
   };
-
-  useEffect(() => {
-    window.addEventListener('keydown', handleKeyPress);
-    return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [currentGuess, gameStatus]);
 
   return (
     <div className="max-w-md mx-auto">
