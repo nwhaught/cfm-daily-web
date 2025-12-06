@@ -186,6 +186,7 @@ function App() {
                 console.log("today's day is: ", today.getDate());
                 console.log("today's month is: ", today.getMonth()+1);
                 console.log("today's year is: ", today.getFullYear());
+                //TODO: Figure out why the date is wrong...(In the evening)
                 const year = today.getFullYear();
                 const month = String(today.getMonth() + 1).padStart(2, '0');
                 const day = String(today.getDate()).padStart(2, '0');
