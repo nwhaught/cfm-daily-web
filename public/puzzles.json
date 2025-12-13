@@ -68,5 +68,61 @@
       "question": "The offices listed here bear very little resemblence to the organization charts of the modern day church. What is this talking about?",
       "response": "Rather than focus on the names of the offices, focus on the jobs they carry out:\n\n Apostles bear witness of Christ and direct the church. Prophets are the Lord's mouthpiece. Pastors care for the spiritual and temporal needs of their local congregations. Teachers help us learn and understand the gospel, and Evangelists share the gospel with the world. \n\nEvery function is necessary, and has always been found in God's church, regardless of the actual title. "
     }
+  },
+  "2025-12-11": {
+    "scryptogram": {
+      "solution": "if it were possible that you could have just men to be your kings, who would establish the laws of god[...]if this could always be the case then it would be expedient that ye should always have kings to rule over you. ",
+      "hint": "Mosiah 29:13",
+      "cipher": "EQLNVWBDCZYJOIGMKTAHPXFURS"
+    },
+    "wordle": "RULER",
+    "prompt": {
+      "reference": "Articles of Faith #11 and 12",
+      "referenceText": "We claim the privilege of worshiping Almighty God according to the dictates of our own conscience, and allow all men the same privilege, let them worship how, where, or what they may. \n\n We believe in being subject to kings, presidents, rulers, and magistrates, in obeying, honoring, and sustaining the law. ",
+      "question": "What do we do if these principles are ever in conflect? When do we be like Daniel, and defy the king, and why do we be like Pres Woodruff, and submit to the law?",
+      "response": "D&C 134 lays out the relationship between these two articles of faith is more detail. Neither principle is absolute. The government does indeed have the right to prohibit religious activities it finds dangerous, and every man deserves the freedom to believe and act according to their conscience. Every interaction here is a negotiation. \n\nOne might liken this question to a question of how to navigate activity in the church from within an unbelieving family. You may not be able to do absolutely everything you'd prefer, but you are still able to act according to what you think is right within your current situation. "
+    }
+  },
+  "2025-12-12": {
+    "scryptogram": {
+      "solution": "his divine power hath given unto us all things that pertain unto life and godliness, through the knowledge of him that hath called us to glory and virtue:",
+      "hint": "2 Peter 1:3",
+      "cipher": "SEWORBALUYNJZIHCMGQVXKFTDP"
+    },
+    "wordle": "WORTH",
+    "prompt": {
+      "reference": "Articles of Faith #13",
+      "referenceText": "We believe in being honest, true, chaste, benevolent, virtuous, and in doing good to all men; inded, we may say that we follow the admonition of Paul-- We believe all things, we hope all things, we have endured many things, and hope to be able to endure all things. If there is anything virtuous, lovely, or of good report or praiseworthy, we seek after these things. ",
+      "question": "What virtuous, lovely, of good report, or praiseworthy things have you sought out lately? ",
+      "response": ""
+    }
+  },
+  "2025-12-13": {
+    "scryptogram": {
+      "solution": "Wherefore, it is lawful that he should have one wife, and they twain shall be one flesh, and all this that the earth might answer the end of its creation;",
+      "hint": "D&C 49:16",
+      "cipher": "LTHJVUPQFCSMYINGBZKRDOXAEW"
+    },
+    "wordle": "POINT",
+    "prompt": {
+      "reference": "The Family Proclamation: P1",
+      "referenceText": "We... solemnly proclaim that marriage between a man and a woman is ordained of God and that the family is central to the Creator's plan for the eternal destiny of His children.",
+      "question": "In what sense is the family central to God's plan for us? How does that relate to Christ's role?",
+      "response": "The entire point of the gospel is to learn how to build and participate in strong families. Christ's role in the plan is to show us how to treat one another, and how to work through the times when we need to forgive one another. The atonement ensures that we're able to maintain our position in God's eternal family."
+    }
+  },
+  "2025-12-14": {
+    "scryptogram": {
+      "solution": "and we talk of christ, we rejoice in christ, we preach of christ, we prophesy of christ, and we write according to our prophecies, that our children may know to what source they may look for a remission of their sins.",
+      "hint": "2 Nephi 25:26",
+      "cipher": "MQLGCDVTZUSOEXBAYKNRJHIWFP"
+    },
+    "wordle": "FOUND",
+    "prompt": {
+      "reference": "The Family Proclamation: P1",
+      "referenceText": "Successful marriages and families are established and maintained on principles of faith, prayer, repentance, forgiveness, respect, love, compassion, work, and wholesome recreational activites.",
+      "question": "Is there anything on this list we should be paying closer attention to?",
+      "response": "The entire point of the gospel is to learn how to build and participate in strong families. Christ's role in the plan is to show us how to treat one another, and how to work through the times when we need to forgive one another. The atonement ensures that we're able to maintain our position in God's eternal family."
+    }
   }
 }
