@@ -217,6 +217,60 @@ function Wordle({ selectedDate, puzzleData }) {
     );
   };
 
+  // Get the status of each letter based on all guesses
+  const getKeyboardLetterStatus = (letter) => {
+    let status = 'unused';
+    
+    guesses.forEach(guess => {
+      guess.split('').forEach((guessLetter, idx) => {
+        if (guessLetter === letter) {
+          const letterStatus = getLetterStatus(guessLetter, idx, guess);
+          // Correct takes precedence over present, present over absent
+          if (letterStatus === 'correct') {
+            status = 'correct';
+          } else if (letterStatus === 'present' && status !== 'correct') {
+            status = 'present';
+          } else if (letterStatus === 'absent' && status === 'unused') {
+            status = 'absent';
+          }
+        }
+      });
+    });
+    
+    return status;
+  };
+
+  const getKeyColor = (status) => {
+    switch (status) {
+      case 'correct':
+        return 'bg-green-500 text-white';
+      case 'present':
+        return 'bg-yellow-500 text-white';
+      case 'absent':
+        return 'bg-gray-400 text-white';
+      default:
+        return 'bg-gray-200 text-gray-800 hover:bg-gray-300';
+    }
+  };
+
+  const handleKeyClick = (key) => {
+    if (gameStatus !== 'playing') return;
+    
+    if (key === 'ENTER') {
+      submitGuess();
+    } else if (key === 'DELETE') {
+      setCurrentGuess(prev => prev.slice(0, -1));
+    } else if (currentGuess.length < WORD_LENGTH) {
+      setCurrentGuess(prev => prev + key);
+    }
+  };
+
+  const keyboardRows = [
+    ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'],
+    ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'],
+    ['ENTER', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', 'DELETE']
+  ];
+
   return (
     <div className="max-w-md mx-auto">
       <div className="mb-6 text-center">
@@ -269,6 +323,31 @@ function Wordle({ selectedDate, puzzleData }) {
         </div>
       )}
 
+       {/* On-Screen Keyboard */}
+      <div className="mb-6">
+        {keyboardRows.map((row, rowIdx) => (
+          <div key={rowIdx} className="flex gap-1 justify-center mb-1">
+            {row.map(key => {
+              const status = key.length === 1 ? getKeyboardLetterStatus(key) : 'unused';
+              const isSpecialKey = key === 'ENTER' || key === 'DELETE';
+              
+              return (
+                <button
+                  key={key}
+                  onClick={() => handleKeyClick(key)}
+                  disabled={gameStatus !== 'playing'}
+                  className={`${isSpecialKey ? 'px-3' : 'w-8'} h-12 rounded font-semibold text-sm transition-colors ${
+                    getKeyColor(status)
+                  } ${gameStatus !== 'playing' ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}`}
+                >
+                  {key === 'DELETE' ? '⌫' : key}
+                </button>
+              );
+            })}
+          </div>
+        ))}
+      </div>
+      
       {/* Instructions */}
       {gameStatus === 'playing' && guesses.length === 0 && (
         <div className="bg-gray-50 rounded-lg p-4 text-sm text-gray-700">
