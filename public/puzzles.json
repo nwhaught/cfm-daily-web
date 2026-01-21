@@ -365,19 +365,33 @@
   },
   "2026-01-20": {
     "scryptogram": {
-      "solution": "13 For thou hast said in thine heart, I will ascend into heaven, I will exalt my throne above the stars of God: I will sit also upon the mount of the congregation, in the sides of the north:14 I will ascend above the heights of the clouds; I will be like the most High.",
-      "hint": "Isaiah 14:13-14",
-      "cipher": "OYGCBMPTWFVHJLZQKARIXESNDU"
+      "solution": "And when thou prayest, thou shalt not be as the hypocrites are: for they love to pray standing in the synagogues and in the corners of the streets, that they may be seen of men. Verily I say unto you, They have their reward.",
+      "hint": "Matthew 6:5",
+      "cipher": ""
     },
-    "wordle": "AGENT",
+    "wordle": "FLOCK",
     "prompt": {
-      "reference": "Moses 4:3",
-      "referenceText": "Wherefore, because that Satan rebelled against me, and sought to destroy the agency of man, which I, the Lord God, had given him, and also, that I should give unto him mine own power; by the power of mine Only Begotten, I caused that he should be cast down;",
-      "question": "How does Satan still seek to destroy our agency?",
-      "response": "In order to truly exercise agency, you need 4 things:\n1. A correct understanding of what your choices will get you.\n 2. Some emotional stake in the outcome. If you don't care what happens, you are not acting as an agent.\n 3. A true choice--if you're being presented with a false choice, you don't truly have any agency.\n4. The ability to change. (ie, to do something different this time than you did last time.\n\nIf that's true, then how might Satan try to destroy agency?\n1. He confuses and hides the consequences of right and wrong, generally by taking advantage of the fact that some consequences are immediate and others are delayed.\n2. He ncourages apathy in the face of complexity or challenge.\n3. He will try to convince us that all roads lead us to the same place, or that nothing we do will matter.\n4. He denies the prospect of change."
+      "reference": "Moses 5:20-21",
+      "referenceText": "20 And Abel, he also brought of the firstlings of his flock, and of the fat thereof. And the Lord had respect unto Abel, and to his offering;\n21 But unto Cain, and to his offering, he had not respect. Now Satan knew this, and it pleased him. And Cain was very wroth, and his countenance fell.",
+      "question": "Why did the Lord reject Cain's offering, but not Abel's?",
+      "response": "One key to understanding this story is in verse 18: And Cain loved Satan more than God. And Satan commanded him, saying: Make an offering unto the Lord. \n Sometimes we do good things for the wrong reasons. Sometimes God can use those actions to change our motivations, but until our motives become pure, we will not receive the true blessings we're looking for.\n\nLater in this chapter it talks about offering an acceptable sacrifice, which today means offering our whole hearts."
     }
   },
   "2026-01-21": {
+    "scryptogram": {
+      "solution": "And my people must needs be chastened until they learn obedience, if it must needs be, by the things which they suffer.",
+      "hint": "D&C 105:9",
+      "cipher": ""
+    },
+    "wordle": "CHAOS",
+    "prompt": {
+      "reference": "Genesis 3:16",
+      "referenceText": "16 Unto the woman he said, I will greatly multiply thy sorrow and thy conception; in sorrow thou shalt bring forth children; and thy desire shall be to thy husband, and he shall rule over thee.",
+      "question": "Is a woman's only purpose to make babies and be ruled by her husband?",
+      "response": "The story of Adam and Eve is DEEPLY symbolic. This isn't the standard take, but it's one I'm comfortable giving as an answer to a very good question. \n\nTake Eve as symbolic of the impulse to try new things, explore, and learn. She dives into the world of chaos, and brings down the world of paradise with her. Take Adam as the one who follows the rules. When things get a bit out of control, he's the one who establishes order and control again. Now, consider that you have an \"Adam\" and an \"Eve\" inside of you. If Adam were in control, nothing would ever change and no growth would ever occur. If Eve were in control, we'd descend into chaos with no hope of ever climbing back out. Eve is the one who brings about new things, and those new things almost always involve struggle. \"I will greatly multiply thy sorrow and thy conception\". And when that happens, we instinctively try to make sense of the new world we find ourselves in. \"thy desire shall be to thy husband, and he shall rule over thee.\" \n\nRather than reading this as a reinforcement of gender roles, take it as a window into your own psyche. "
+    }
+  },
+  "2026-01-24": {
     "scryptogram": {
       "solution": "He hath given unto you that ye might know good from evil, and he hath given unto you that ye might choose life or death; and ye can do good and be restored unto that which is good, or have that which is good restored unto you; or ye can do evil, and have that which is evil restored unto you.",
       "hint": "Helaman 14:31",
@@ -389,6 +403,20 @@
       "referenceText": "4 And the serpent said unto the woman, Ye shall not surely die:\n5 For God doth know that in the day ye eat thereof, then your eyes shall be opened, and ye shall be as gods, knowing good and evil.\n6 And when the woman saw that the tree was good for food, and that it was pleasant to the eyes, and a tree to be desired to make one wise, she took of the fruit thereof, and did eat, and gave also unto her husband with her; and he did eat.",
       "question": "What is a \"fruit\"? What are the fruits of knowing good and evil?",
       "response": "In a scriptural context, a fruit is a consequence.So, what are the consequences of knowing good and evil? The consequence is that you are now accountable for your actions. If you do something wrong before you know that it's wrong, you're innocent, just like Adam and Eve were in the Garden. BUT, if you don't know what's wrong, you also don't know what's right, and just like you can't be blamed for anything wrong, you also can't grow."
+    }
+  },
+  "2026-01-25": {
+    "scryptogram": {
+      "solution": "13 For thou hast said in thine heart, I will ascend into heaven, I will exalt my throne above the stars of God: I will sit also upon the mount of the congregation, in the sides of the north:14 I will ascend above the heights of the clouds; I will be like the most High.",
+      "hint": "Isaiah 14:13-14",
+      "cipher": "OYGCBMPTWFVHJLZQKARIXESNDU"
+    },
+    "wordle": "AGENT",
+    "prompt": {
+      "reference": "Moses 4:3",
+      "referenceText": "Wherefore, because that Satan rebelled against me, and sought to destroy the agency of man, which I, the Lord God, had given him, and also, that I should give unto him mine own power; by the power of mine Only Begotten, I caused that he should be cast down;",
+      "question": "How does Satan still seek to destroy our agency?",
+      "response": "In order to truly exercise agency, you need 4 things:\n1. A correct understanding of what your choices will get you.\n 2. Some emotional stake in the outcome. If you don't care what happens, you are not acting as an agent.\n 3. A true choice--if you're being presented with a false choice, you don't truly have any agency.\n4. The ability to change. (ie, to do something different this time than you did last time.\n\nIf that's true, then how might Satan try to destroy agency?\n1. He confuses and hides the consequences of right and wrong, generally by taking advantage of the fact that some consequences are immediate and others are delayed.\n2. He ncourages apathy in the face of complexity or challenge.\n3. He will try to convince us that all roads lead us to the same place, or that nothing we do will matter.\n4. He denies the prospect of change."
     }
   },
   "2026-01-26": {
