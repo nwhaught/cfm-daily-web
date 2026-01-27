@@ -421,30 +421,44 @@
   },
   "2026-01-26": {
     "scryptogram": {
-      "solution": "And ye shall offer for a sacrifice unto me a broken heart and a contrite spirit. And whoso cometh unto me with a broken heart and a contrite spirit, him will I baptize with fire and with the Holy Ghost",
-      "hint": "3 Nephi 9:20",
+      "solution": "3 Lo, children are an heritage of the Lord: and the fruit of the womb is his reward. 4 As arrows are in the hand of a mighty man; so are children of the youth. 5 Happy is the man that hath his quiver full of them: they shall not be ashamed, but they shall speak with the enemies in the gate.",
+      "hint": "Psalms 127:3-5",
       "cipher": "VWTQODAPLKYGZMFXEBJICHNRSU"
     },
-    "wordle": "OFFER",
+    "wordle": "SLAIN",
     "prompt": {
-      "reference": "Moses 6:3",
-      "referenceText": "3 And God revealed himself unto Seth, and he rebelled not, but offered an acceptable sacrifice, like unto his brother Abel. And to him also was born a son, and he called his name Enos.",
-      "question": "What does it mean to \"offer an acceptable sacrifice\"? How can we tell if our offerings are acceptable? ",
-      "response": "The things that God asks us to sacrifice are the things that we are tempted to put in front of Him. This is why the sacrifice that we are asked to make is summarized as \"your whole heart\". Our wills are the only thing that are truly ours, and they are the most important sacrifice to make. "
+      "reference": "Moses 6:2",
+      "referenceText": "2 And Adam knew his wife again, and she bare a son, and he called his name Seth. And Adam glorified the name of God; for he said: God hath appointed me another seed, instead of Abel, whom Cain slew.",
+      "question": "Why was Adam excited, while his son had been killed?",
+      "response": "Adam was definitely NOT excited that Abel had been killed. Abel represented the thing that Adam wanted most of all: righteous children. But Adam was glad that Seth WAS righteous, and that Seth taught HIS children to be righteous. The thing that I want most as a parent, is your YOU to teach YOUR children how to be righteous and happy."
     }
   },
   "2026-01-27": {
     "scryptogram": {
-      "solution": "Likewise the Spirit also helpeth our infirmities: for we know not what we should pray for as we ought: but the Spirit itself maketh intercession for us with groanings which cannot be uttered.",
-      "hint": "Romans 8:26",
+      "solution": "Wherefore, we shall have a perfect knowledge of all our guilt, and our uncleanness, and our nakedness; and the righteous shall have a perfect knowledge of their enjoyment, and their righteousness, being clothed with purity, yea, even with the robe of righteousness.",
+      "hint": "2 Ne 9:14",
       "cipher": "REKPHVQTLZBNFXGCWJIYMASDOU"
     },
-    "wordle": "FAVOR",
+    "wordle": "CLEAN",
     "prompt": {
-      "reference": "Moses 6:31",
-      "referenceText": "31 And when Enoch had heard these words, he bowed himself to the earth, before the Lord, and spake before the Lord, saying: Why is it that I have found favor in thy sight, and am but a lad, and all the people hate me; for I am slow of speech; wherefore am I thy servant?",
-      "question": "Why does God ask us to do things that we feel like we cannot do? How should we respond? Has this happened to you?",
-      "response": "Our destiny is to become like our Heavenly Father. That is going to take a LOT of growth, and a lot of that growth is going to be uncomfortable. One of the greatest blessings we ever received was when Adam and Eve partook of the fruit and gained the capacity for growth. \n\nWhen we are feeling overwhelmed, it's a good time to remind ourselves that God loves us, Christ is a merciful judge, and we should judge ourselves the same way. We give our very best efforts, but just like the widow, who could only offer a single penny to the temple, sometimes our best doesn't look like much. God appreciates it just as much, or more, than the efforts of those for whom things come easily."
+      "reference": "Moses 6:57",
+      "referenceText": "Wherefore teach it unto your children, that all men, everywhere, must repent, or they can in nowise inherit the kingdom of God, for no unclean thing can dwell there, or dwell in his presence; for, in the language of Adam, Man of Holiness is his name, and the name of his Only Begotten is the Son of Man, even Jesus Christ, a righteous Judge, who shall come in the meridian of time.",
+      "question": "What counts as \"unclean\"?",
+      "response": "We've probably all been on the receiving end of someone ruining a moment. I think that gets at the idea of being \"unclean\", particularly in God's eyes. We're trying to build lives of peace and prosperity, reverence, and love for God and each other. When something comes to disrupt those feelings, it feels like a stain that we have to remove. "
+    }
+  },
+  "2026-01-28": {
+    "scryptogram": {
+      "solution": "Therefore we are buried with him by baptism into death: that like as Christ was raised up from the dead by the glory of the Father, even so we also should walk in newness of life.",
+      "hint": "Romans 6:4",
+      "cipher": "QFHBKANMUZLDVIPRWYCXJOETSG"
+    },
+    "wordle": "QUICK",
+    "prompt": {
+      "reference": "Moses 6:65",
+      "referenceText": "And thus he was baptized, and the Spirit of God descended upon him, and thus he was born of the Spirit, and became quickened in the inner man.",
+      "question": "What does it mean to be \"quickened in the inner man\"?",
+      "response": "To be quickened means to become alive. The inner man is the spiritual man, as opposed to the natural man. Adam's baptism, of water and the spirit brought him to life spiritually. "
     }
   }
 }
