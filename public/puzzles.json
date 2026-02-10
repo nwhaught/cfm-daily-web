@@ -544,5 +544,47 @@
       "question": "How is Zion different from the rest of the world?",
       "response": "Zion is different becuase instead of fighting with each other, with everyone competing to be the best, they work together, and look after one another. Instead of arguing to convince someone that they're right, people in Zion listen to each other and try to understand each other. They share easily, and always work to include people in righteousness."
     }
+  },
+  "2026-02-09": {
+    "scryptogram": {
+      "solution": "let virtue garnish their thoughts unceasingly; then shall thy confidence wax strong in the presence of God; and the doctrine of the priesthood shall distill on thy soul as the dews from heaven.",
+      "hint": "D&C 121:45",
+      "cipher": "PTAJBMDCLXWRSUFYKOGZIQNVHE"
+    },
+    "wordle": "THINK",
+    "prompt": {
+      "reference": "Gen 6:5",
+      "referenceText": "And God saw that the wickedness of man was great in the earth, and that every imagination of the thoughts of his heart was only evil continually.",
+      "question": "When we imagine, what do we imagine? ",
+      "response": "How great would it be, if instead of getting caught up in thoughts that are angry, frustrated, selfish, or lazy, our thoughts were consumed with imagining ways to serve, or imagining ways to become the people we really want to be? This would be an example of virtue garnishing my thoughts unceaseingly. We should actively try to imagine good things."
+    }
+  },
+  "2026-02-10": {
+    "scryptogram": {
+      "solution": "and after Alma had said these words, both alma and helam were buried in the water; and they arose and came forth out of the water rejoicing, being filled with the spirit",
+      "hint": "Mosiah 18:14",
+      "cipher": "JFDABCENRUTYZPXQSKIOVLHGMW"
+    },
+    "wordle": "WATER",
+    "prompt": {
+      "reference": "Gen 6:17-18",
+      "referenceText": "And behold, I, even I, do bring a flood of waters upon the earth, to destroy all flesh, wherein is the breath of life, from under heaven; and every thing that is in the earth shall die. \n\nBut with thee will I establish my covenant; and thou shalt come into the ark, thou and thy sons, and they wife, and thy sons' wives with thee. ",
+      "question": "How is the flood like baptism?",
+      "response": "The earth was covered with water, just like we are when we're baptised. Also, the world was sinful, just like us when we're baptised. God established his covenant with Noah, just like he does with us. And when we keep that covenant, we help save our families and all the other good things in our lives. "
+    }
+  },
+  "2026-02-11": {
+    "scryptogram": {
+      "solution": "and their mourning was turned into joy, and their lamentations into the praise and thanksgiving unto the lord jesus christ, their redeemer",
+      "hint": "3 Ne 10:10",
+      "cipher": "VRNMTQYJWKHUPXBOIALZEGSDFC"
+    },
+    "wordle": "ALIVE",
+    "prompt": {
+      "reference": "Gen 6:19",
+      "referenceText": "And of every living thing of all flesh, two of every sort shalt thou bring into the ark, to keep them alive with thee; they shall be male and female",
+      "question": "Why did God have Noah save the animals, rather than just save them Himself? Is there anything we can learn from that?",
+      "response": "One thing I learn from that is that even when it feels like my whole world is going wrong, I have a responsibility to find and protect the good things that God has given me. And even when everything feels bad, that's still a LOT of things. Enough to fill an enormous ark."
+    }
   }
 }
