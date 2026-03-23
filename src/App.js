@@ -15,6 +15,7 @@ function App() {
   // In development, falls back to /puzzles.json served from public/.
   const puzzlesUrl = process.env.NODE_ENV === 'development'
     ? '/puzzles.json'
+    // : 'https://raw.githubusercontent.com/nwhaught/cfm-daily-web/refactor-puzzles-load/data/puzzles.json';
     : 'https://raw.githubusercontent.com/nwhaught/cfm-daily-web/master/data/puzzles.json';
 
   useEffect(() => {
