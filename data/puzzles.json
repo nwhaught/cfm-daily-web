@@ -367,7 +367,7 @@
     "scryptogram": {
       "solution": "And when thou prayest, thou shalt not be as the hypocrites are: for they love to pray standing in the synagogues and in the corners of the streets, that they may be seen of men. Verily I say unto you, They have their reward.",
       "hint": "Matthew 6:5",
-      "cipher": ""
+      "cipher": "RAHFZEDITQUJNSMOXBYWCKVLGP"
     },
     "wordle": "FLOCK",
     "prompt": {
@@ -381,7 +381,7 @@
     "scryptogram": {
       "solution": "And my people must needs be chastened until they learn obedience, if it must needs be, by the things which they suffer.",
       "hint": "D&C 105:9",
-      "cipher": ""
+      "cipher": "RAHFZEDITQUJNSMOXBYWCKVLGP"
     },
     "wordle": "CHAOS",
     "prompt": {
@@ -683,20 +683,20 @@
       "referenceText": "9 And Jacob said, O God of my father Abraham, and God of my father Isaac, the Lord which saidst unto me, Return unto thy country, and to thy kindred, and I will deal well with thee:\n10 I am not worthy of the least of all the mercies, and of all the truth, which thou hast shewed unto thy servant; for with my staff I passed over this Jordan; and now I am become two bands.\n11 Deliver me, I pray thee, from the hand of my brother, from the hand of Esau: for I fear him, lest he will come and smite me, and the mother with the children.\n12 And thou saidst, I will surely do thee good, and make thy seed as the sand of the sea, which cannot be numbered for multitude.",
       "question": "What did Jacob do when he heard his brother Esau was coming, and he was afraid?",
       "response": "Jacob's prayer has a couple of points that I think are good to note. First, his prayer was intentional. It wasn't just \"please bless us all to be safe\"; he knew exactly what the problem was. Second, he acknowledged both his weakness and his strength in the prayer. His strength came from the promises that he had already received from God. His weakness came from the fact that he was physically weak and that he was afraid. \n\nAfter this prayer, he enacted a plan to protect him from what he assumed was his vindictive brother. Jacob's prayer led him directly to faithful action. "
+    }
+  },
+  "2026-03-05": {
+    "scryptogram": {
+      "solution": "8 Therefore, thus saith the Lord unto you, with whom the priesthood hath continued through the lineage of your fathers—9 For ye are lawful heirs, according to the flesh, and have been hid from the world with Christ in God",
+      "hint": "D&C 86:8-9",
+      "cipher": "DSMBQCIPWVRUGOHKNETYJLFZAX"
     },
-    "2026-03-05": {
-      "scryptogram": {
-        "solution": "8 Therefore, thus saith the Lord unto you, with whom the priesthood hath continued through the lineage of your fathers—9 For ye are lawful heirs, according to the flesh, and have been hid from the world with Christ in God",
-        "hint": "D&C 86:8-9",
-        "cipher": "DSMBQCIPWVRUGOHKNETYJLFZAX"
-      },
-      "wordle": "BIRTH",
-      "prompt": {
-        "reference": "Genesis 25:31-32",
-        "referenceText": "31 And Jacob said, Sell me this day thy birthright.\n32 And Esau said, Behold, I am at the point to die: and what profit shall this birthright do to me?",
-        "question": "What is our birthright? What might we be tempted to trade it for?",
-        "response": "Think of all the blessings that you have being born into a good family that loves each other and lives the gospel. It's hard to overstate how big a blessing that is. A birthright is an inheritance, but more specifically for Jacob and Esau, it was about who would obtain the blessings of that covenant with God. There were practical considerations for why there could only be one son to obtain the birthright, but Esau's decision had major spiritual implications. Fortunately for us, the spiritual implications are the ones that we care about, and that means that we can all maintain our birthright to this kind of life and this kind of family, now and for eternity. "
-      }
+    "wordle": "BIRTH",
+    "prompt": {
+      "reference": "Genesis 25:31-32",
+      "referenceText": "31 And Jacob said, Sell me this day thy birthright.\n32 And Esau said, Behold, I am at the point to die: and what profit shall this birthright do to me?",
+      "question": "What is our birthright? What might we be tempted to trade it for?",
+      "response": "Think of all the blessings that you have being born into a good family that loves each other and lives the gospel. It's hard to overstate how big a blessing that is. A birthright is an inheritance, but more specifically for Jacob and Esau, it was about who would obtain the blessings of that covenant with God. There were practical considerations for why there could only be one son to obtain the birthright, but Esau's decision had major spiritual implications. Fortunately for us, the spiritual implications are the ones that we care about, and that means that we can all maintain our birthright to this kind of life and this kind of family, now and for eternity. "
     }
   }
 }
