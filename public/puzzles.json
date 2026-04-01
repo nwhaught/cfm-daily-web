@@ -367,7 +367,7 @@
     "scryptogram": {
       "solution": "And when thou prayest, thou shalt not be as the hypocrites are: for they love to pray standing in the synagogues and in the corners of the streets, that they may be seen of men. Verily I say unto you, They have their reward.",
       "hint": "Matthew 6:5",
-      "cipher": ""
+      "cipher": "RAHFZEDITQUJNSMOXBYWCKVLGP"
     },
     "wordle": "FLOCK",
     "prompt": {
@@ -381,7 +381,7 @@
     "scryptogram": {
       "solution": "And my people must needs be chastened until they learn obedience, if it must needs be, by the things which they suffer.",
       "hint": "D&C 105:9",
-      "cipher": ""
+      "cipher": "RAHFZEDITQUJNSMOXBYWCKVLGP"
     },
     "wordle": "CHAOS",
     "prompt": {
@@ -683,34 +683,103 @@
       "referenceText": "9 And Jacob said, O God of my father Abraham, and God of my father Isaac, the Lord which saidst unto me, Return unto thy country, and to thy kindred, and I will deal well with thee:\n10 I am not worthy of the least of all the mercies, and of all the truth, which thou hast shewed unto thy servant; for with my staff I passed over this Jordan; and now I am become two bands.\n11 Deliver me, I pray thee, from the hand of my brother, from the hand of Esau: for I fear him, lest he will come and smite me, and the mother with the children.\n12 And thou saidst, I will surely do thee good, and make thy seed as the sand of the sea, which cannot be numbered for multitude.",
       "question": "What did Jacob do when he heard his brother Esau was coming, and he was afraid?",
       "response": "Jacob's prayer has a couple of points that I think are good to note. First, his prayer was intentional. It wasn't just \"please bless us all to be safe\"; he knew exactly what the problem was. Second, he acknowledged both his weakness and his strength in the prayer. His strength came from the promises that he had already received from God. His weakness came from the fact that he was physically weak and that he was afraid. \n\nAfter this prayer, he enacted a plan to protect him from what he assumed was his vindictive brother. Jacob's prayer led him directly to faithful action. "
+    }
+  },
+  "2026-03-05": {
+    "scryptogram": {
+      "solution": "8 Therefore, thus saith the Lord unto you, with whom the priesthood hath continued through the lineage of your fathers—9 For ye are lawful heirs, according to the flesh, and have been hid from the world with Christ in God",
+      "hint": "D&C 86:8-9",
+      "cipher": "DSMBQCIPWVRUGOHKNETYJLFZAX"
     },
-    "2026-03-05": {
-      "scryptogram": {
-        "solution": "8 Therefore, thus saith the Lord unto you, with whom the priesthood hath continued through the lineage of your fathers—9 For ye are lawful heirs, according to the flesh, and have been hid from the world with Christ in God",
-        "hint": "D&C 86:8-9",
-        "cipher": "DSMBQCIPWVRUGOHKNETYJLFZAX"
-      },
-      "wordle": "BIRTH",
-      "prompt": {
-        "reference": "Genesis 25:31-32",
-        "referenceText": "31 And Jacob said, Sell me this day thy birthright.\n32 And Esau said, Behold, I am at the point to die: and what profit shall this birthright do to me?",
-        "question": "What is our birthright? What might we be tempted to trade it for?",
-        "response": "Think of all the blessings that you have being born into a good family that loves each other and lives the gospel. It's hard to overstate how big a blessing that is. A birthright is an inheritance, but more specifically for Jacob and Esau, it was about who would obtain the blessings of that covenant with God. There were practical considerations for why there could only be one son to obtain the birthright, but Esau's decision had major spiritual implications. Fortunately for us, the spiritual implications are the ones that we care about, and that means that we can all maintain our birthright to this kind of life and this kind of family, now and for eternity. "
-      }
+    "wordle": "BIRTH",
+    "prompt": {
+      "reference": "Genesis 25:31-32",
+      "referenceText": "31 And Jacob said, Sell me this day thy birthright.\n32 And Esau said, Behold, I am at the point to die: and what profit shall this birthright do to me?",
+      "question": "What is our birthright? What might we be tempted to trade it for?",
+      "response": "Think of all the blessings that you have being born into a good family that loves each other and lives the gospel. It's hard to overstate how big a blessing that is. A birthright is an inheritance, but more specifically for Jacob and Esau, it was about who would obtain the blessings of that covenant with God. There were practical considerations for why there could only be one son to obtain the birthright, but Esau's decision had major spiritual implications. Fortunately for us, the spiritual implications are the ones that we care about, and that means that we can all maintain our birthright to this kind of life and this kind of family, now and for eternity. "
+    }
+  },  "2026-03-31": {
+    "scryptogram": {
+      "solution": "and he took bread, and gave thanks, and brake it, and gave unto them, saying, this is my body which is given for you: this do in remembrance of me. likewise also the cup after supper, saying, this cup is the new testament in my blood, which is shed for you.",
+      "hint": "Luke 22:19-20",
+      "cipher": "YQVJNLBZPSTFOKDEHWMRGACUXI"
     },
-    "2026-03-09": {
-      "scryptogram": {
-        "solution": "I know that I am a visionary man; for if I had not seen the things of God in a vision I should not have known the goodness of God, but had tarried at Jerusalem, and had perished with my brethren.",
-        "hint": "1 Nephi 5:4",
-        "cipher": "EUKAHXBCGSQTLPFJZMWROYIDNV"
-      },
-      "wordle": "DREAM",
-      "prompt": {
-        "reference": "Genesis 37:11",
-        "referenceText": "10 ...and his father rebuked him, and said unto him, What is this dream that thou hast dreamed? Shall I and thy mother and thy brethren indeed come to bow down ourselves to thee to the earth?\n\n11 And his brethren envied him; but his father observed the saying.",
-        "question": "What's the difference between Jacob and his sons on hearing Joseph's dream? ",
-        "response": "Neither group was really excited about the dream. And the scriptures aren't totally clear, but I think Jacob understood something about Joseph's prophetic gift, and knew that it was important to pay attention, even if the content seemed improper. \n\nThis isn't just about prophets, by the way. What other things do we ignore or ridicule because we don't like them? How can we find the truth of things? "
-      }
+    "wordle": "BREAD",
+    "prompt": {
+      "reference": "Moroni 4:3",
+      "referenceText": "O God, the Eternal Father, we ask thee in the name of thy Son, Jesus Christ, to bless and sanctify this bread to the souls of all those who partake of it, that they may eat in remembrance of the body of thy Son, and witness unto thee, O God, the Eternal Father, that they are willing to take upon them the name of thy Son, and always remember him and keep his commandments which he has given them; that they may always have his Spirit to be with them. Amen.",
+      "question": "The sacrament prayer says we witness that we are willing to 'take upon us the name' of Christ. What does it mean to take upon His name? How does the bread and water point us to what that name-taking costs?",
+      "response": ""
+    }
+  },
+  "2026-04-01": {
+    "scryptogram": {
+      "solution": "saying, father, if thou be willing, remove this cup from me: nevertheless not my will, but thine, be done.",
+      "hint": "Luke 22:42",
+      "cipher": "ZMKBVUXEQCRIJLGYSOFHDNPTAW"
+    },
+    "wordle": "OLIVE",
+    "prompt": {
+      "reference": "D&C 19:18-19",
+      "referenceText": "Which suffering caused myself, even God, the greatest of all, to tremble because of pain, and to bleed at every pore, and to suffer both body and spirit—and would that I might not drink the bitter cup, and shrink— Nevertheless, glory be to the Father, and I partook and finished my preparations unto the children of men.",
+      "question": "Gethsemane means 'olive press.' Olives can only release their oil under tremendous pressure. What does this symbol teach us about what Christ endured there? And about what our own trials might be pressing out of us?",
+      "response": ""
+    }
+  },
+  "2026-04-02": {
+    "scryptogram": {
+      "solution": "but he was wounded for our transgressions, he was bruised for our iniquities: the chastisement of our peace was upon him; and with his stripes we are healed.",
+      "hint": "Isaiah 53:5",
+      "cipher": "KYDTMWQZXBJSNPFHCUOLGREAVI"
+    },
+    "wordle": "ATONE",
+    "prompt": {
+      "reference": "John 1:29",
+      "referenceText": "The next day John seeth Jesus coming unto him, and saith, Behold the Lamb of God, which taketh away the sin of the world.",
+      "question": "The Passover lamb had to be without blemish, and its blood marked the doorposts of those it protected. What does calling Christ the 'Lamb of God' tell us about His role—and what does it mean for us to be marked or identified by His name?",
+      "response": ""
+    }
+  },
+  "2026-04-03": {
+    "scryptogram": {
+      "solution": "and about the ninth hour jesus cried with a loud voice, saying, eli, eli, lama sabachthani? that is to say, my god, my god, why hast thou forsaken me?",
+      "hint": "Matthew 27:46",
+      "cipher": "WVYTNHXBKZOACMQSJEDPGRILUF"
+    },
+    "wordle": "CROSS",
+    "prompt": {
+      "reference": "Psalm 22:1",
+      "referenceText": "My God, my God, why hast thou forsaken me? why art thou so far from helping me, and from the words of my roaring?",
+      "question": "Christ quoted Psalm 22 from the cross—a psalm that begins in anguish but ends in triumphant praise. Why would He choose these words in His final hours? Have you ever felt forsaken, only to look back and see that God had been present all along?",
+      "response": ""
+    }
+  },
+  "2026-04-04": {
+    "scryptogram": {
+      "solution": "but now is christ risen from the dead, and become the firstfruits of them that slept. for since by man came death, by man came also the resurrection of the dead. for as in adam all die, even so in christ shall all be made alive.",
+      "hint": "1 Corinthians 15:20-22",
+      "cipher": "LTORZUECQSFKBXNMWIPGAHJDVY"
+    },
+    "wordle": "FAITH",
+    "prompt": {
+      "reference": "Mosiah 5:7",
+      "referenceText": "And now, because of the covenant which ye have made ye shall be called the children of Christ, his sons, and his daughters; for behold, this day he hath spiritually begotten you; for ye say that your hearts are changed through faith on his name; therefore, ye are born of him and have become his sons and his daughters.",
+      "question": "Holy Saturday is the silent day between the cross and the empty tomb—a day of not knowing. The disciples didn't know resurrection was coming. What does it mean to carry Christ's name in the dark, between His promise and its fulfillment?",
+      "response": ""
+    }
+  },
+  "2026-04-05": {
+    "scryptogram": {
+      "solution": "jesus said unto her, i am the resurrection, and the life: he that believeth in me, though he were dead, yet shall he live: and whosoever liveth and believeth in me shall never die. believest thou this?",
+      "hint": "John 11:25-26",
+      "cipher": "PNZXWSQTJFHBUOMLADRCYKVGEI"
+    },
+    "wordle": "RISEN",
+    "prompt": {
+      "reference": "John 20:15-16",
+      "referenceText": "Jesus saith unto her, Woman, why weepest thou? whom seekest thou? She, supposing him to be the gardener, saith unto him, Sir, if thou have borne him hence, tell me where thou hast laid him, and I will take him away. Jesus saith unto her, Mary. She turned herself, and saith unto him, Rabboni; which is to say, Master.",
+      "question": "Mary came to the tomb in grief, not expecting resurrection. Christ called her by name, and she recognized Him. How does Christ call us by name today? What does it mean—as someone who has covenanted to take His name—to be known by, and to know, the Risen Lord?",
+      "response": ""
     }
   }
 }
