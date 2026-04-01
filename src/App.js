@@ -11,14 +11,13 @@ function App() {
   const [availableDates, setAvailableDates] = useState([]);
   const [progress, setProgress] = useState({});
 
-  // Load puzzle data from GitHub (external to deployment).
-  // In development, falls back to /puzzles.json served from public/.
-  const puzzlesUrl = process.env.NODE_ENV === 'development'
-    ? '/puzzles.json'
-    // : 'https://raw.githubusercontent.com/nwhaught/cfm-daily-web/refactor-puzzles-load/data/puzzles.json';
-    : 'https://raw.githubusercontent.com/nwhaught/cfm-daily-web/master/data/puzzles.json';
-
   useEffect(() => {
+    // Load puzzle data from GitHub (external to deployment).
+    // In development, falls back to /puzzles.json served from public/.
+    const puzzlesUrl = process.env.NODE_ENV === 'development'
+      ? '/puzzles.json'
+      // : 'https://raw.githubusercontent.com/nwhaught/cfm-daily-web/refactor-puzzles-load/data/puzzles.json';
+      : 'https://raw.githubusercontent.com/nwhaught/cfm-daily-web/master/data/puzzles.json';
     fetch(puzzlesUrl)
       .then(response => response.json())
       .then(data => {
