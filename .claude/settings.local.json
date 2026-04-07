@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(git checkout:*)",
-      "Bash(git remote:*)"
+      "Bash(git remote:*)",
+      "WebFetch(domain:www.churchofjesuschrist.org)",
+      "WebSearch",
+      "Bash(node:*)"
     ]
   }
 }
