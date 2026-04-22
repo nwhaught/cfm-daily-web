@@ -978,17 +978,101 @@
       "response": ""
     }
   },
-  "2026-04-20": {
+    "2026-04-20": {
     "scryptogram": {
-      "solution": "and thou shalt remember all the way which the lord thy god led thee these forty years in the wilderness, to humble thee, and to prove thee, to know what was in thine heart, whether thou wouldest keep his commandments, or no.",
-      "hint": "Deuteronomy 8:2",
-      "cipher": "FGHIJKLMNOPQRSTUVWXYZABCDE"
+      "solution": "but ye are a chosen generation, a royal priesthood, an holy nation, a peculiar people; that ye should shew forth the praises of him who hath called you out of darkness into his marvellous light:",
+      "hint": "1 Peter 2:9",
+      "cipher": "IJKLMNOPQRSTUVWXYZABCDEFGH"
     },
-    "wordle": "PROVE",
+    "wordle": "TROVE",
     "prompt": {
-      "reference": "Deuteronomy 8:5",
-      "referenceText": "Thou shalt also consider in thine heart, that, as a man chasteneth his son, so the Lord thy God chasteneth thee.",
-      "question": "Moses told Israel the wilderness was not a punishment—it was a curriculum. God designed it to humble them, prove them, and reveal what was in their hearts. What wilderness are you currently passing through? What might God be teaching you through it? What has He already taught you through past wildernesses?",
+      "reference": "Exodus 19:5-6",
+      "referenceText": "Now therefore, if ye will obey my voice indeed, and keep my covenant, then ye shall be a peculiar treasure unto me above all people: for all the earth is mine: And ye shall be unto me a kingdom of priests, and an holy nation.",
+      "question": "At the foot of Sinai, before any commandment was given, God offered Israel a covenant identity—'a peculiar treasure,' 'a kingdom of priests.' Peter borrowed those exact words to describe the Saints. What does it mean to you that this identity is offered before any of the rules? Do you think of being a member of God's covenant people primarily as an identity, or primarily as a list of things to do?",
+      "response": ""
+    }
+  },
+  "2026-04-21": {
+    "scryptogram": {
+      "solution": "therefore, sanctify yourselves that your minds become single to god, and the days will come that you shall see him; for he will unveil his face unto you, and it shall be in his own time, and in his own way, and according to his own will.",
+      "hint": "D&C 88:68",
+      "cipher": "MNOPQRSTUVWXYZABCDEFGHIJKL"
+    },
+    "wordle": "CLEAN",
+    "prompt": {
+      "reference": "Exodus 19:10-11",
+      "referenceText": "And the Lord said unto Moses, Go unto the people, and sanctify them to day and to morrow, and let them wash their clothes, And be ready against the third day: for the third day the Lord will come down in the sight of all the people upon mount Sinai.",
+      "question": "Israel had to wash, set boundaries, and prepare for three days before the Lord descended. What does spiritual sanctification look like in your own week? What 'three days' of preparation precede your most significant encounters with God—Sunday worship, the temple, prayer? Do you give them that kind of time, or do you expect to meet God on the way to something else?",
+      "response": ""
+    }
+  },
+  "2026-04-22": {
+    "scryptogram": {
+      "solution": "thou shalt love the lord thy god with all thy heart, and with all thy soul, and with all thy mind. this is the first and great commandment. and the second is like unto it, thou shalt love thy neighbour as thyself. on these two commandments hang all the law and the prophets.",
+      "hint": "Matthew 22:37-40",
+      "cipher": "OPQRSTUVWXYZABCDEFGHIJKLMN"
+    },
+    "wordle": "HONOR",
+    "prompt": {
+      "reference": "Exodus 20:2-3",
+      "referenceText": "I am the Lord thy God, which have brought thee out of the land of Egypt, out of the house of bondage. Thou shalt have no other gods before me.",
+      "question": "Christ said the entire law hangs on two commandments: love God, love neighbor. The Ten Commandments themselves divide along the same line—the first four about how we relate to God, the last six about how we relate to each other. Which of the ten do you find easiest to keep? Which do you find hardest? What might that reveal about which kind of love is harder for you?",
+      "response": ""
+    }
+  },
+  "2026-04-23": {
+    "scryptogram": {
+      "solution": "for this is my blood of the new testament, which is shed for many for the remission of sins.",
+      "hint": "Matthew 26:28",
+      "cipher": "QRSTUVWXYZABCDEFGHIJKLMNOP"
+    },
+    "wordle": "FEAST",
+    "prompt": {
+      "reference": "Exodus 24:7-8",
+      "referenceText": "And he took the book of the covenant, and read in the audience of the people: and they said, All that the Lord hath said will we do, and be obedient. And Moses took the blood, and sprinkled it on the people, and said, Behold the blood of the covenant, which the Lord hath made with you concerning all these words.",
+      "question": "Israel said the same words twice—'All that the Lord hath said will we do.' Then they were sprinkled with blood and went up the mount and ate and drank in God's presence. At the Last Supper, Christ used Moses's exact phrase: 'the blood of the covenant.' Every Sunday you eat and drink in God's presence under that same covenant. What does it mean to you that the sacrament is not just remembrance but ratification? When you say 'amen,' are you saying 'all that the Lord hath said will I do'?",
+      "response": ""
+    }
+  },
+  "2026-04-24": {
+    "scryptogram": {
+      "solution": "and that thou mayest more fully keep thyself unspotted from the world, thou shalt go to the house of prayer and offer up thy sacraments upon my holy day; for verily this is a day appointed unto you to rest from your labors, and to pay thy devotions unto the most high;",
+      "hint": "D&C 59:9-10",
+      "cipher": "STUVWXYZABCDEFGHIJKLMNOPQR"
+    },
+    "wordle": "TOKEN",
+    "prompt": {
+      "reference": "Exodus 31:13",
+      "referenceText": "Speak thou also unto the children of Israel, saying, Verily my sabbaths ye shall keep: for it is a sign between me and you throughout your generations; that ye may know that I am the Lord that doth sanctify you.",
+      "question": "God called the Sabbath a 'sign'—a token between Him and His people that publicly marked them as His. In the modern world, almost no one notices whether you keep the Sabbath or not. So who is the sign for? What does the way you actually spend Sunday tell God about whether you still want to be marked as His?",
+      "response": ""
+    }
+  },
+  "2026-04-25": {
+    "scryptogram": {
+      "solution": "yea, how quick to be lifted up in pride; yea, how quick to boast, and do all manner of iniquity; and how slow are they to remember the lord their god, and to give ear unto his counsels, yea, how slow to walk in wisdom's paths!",
+      "hint": "Helaman 12:5",
+      "cipher": "UVWXYZABCDEFGHIJKLMNOPQRST"
+    },
+    "wordle": "IDOLS",
+    "prompt": {
+      "reference": "Exodus 32:7-8",
+      "referenceText": "And the Lord said unto Moses, Go, get thee down; for thy people, which thou broughtest out of the land of Egypt, have corrupted themselves: They have turned aside quickly out of the way which I commanded them: they have made them a molten calf, and have worshipped it, and have sacrificed thereunto, and said, These be thy gods, O Israel, which have brought thee up out of the land of Egypt.",
+      "question": "While Moses was on the mountain receiving covenants, Israel was at the foot of it making an idol. The Lord said they had 'turned aside quickly.' We don't usually melt down our jewelry, but we are quick to fashion gods—careers, comforts, the approval of others, our phones—when our covenant relationship feels distant or delayed. What 'golden calf' do you reach for when God seems silent or far? What does that reflex tell you about what you most want?",
+      "response": ""
+    }
+  },
+  "2026-04-26": {
+    "scryptogram": {
+      "solution": "now this moses plainly taught to the children of israel in the wilderness, and sought diligently to sanctify his people that they might behold the face of god; but they hardened their hearts and could not endure his presence;",
+      "hint": "D&C 84:23-24",
+      "cipher": "WXYZABCDEFGHIJKLMNOPQRSTUV"
+    },
+    "wordle": "SHINE",
+    "prompt": {
+      "reference": "Exodus 33:18-19",
+      "referenceText": "And he said, I beseech thee, shew me thy glory. And he said, I will make all my goodness pass before thee, and I will proclaim the name of the Lord before thee; and will be gracious to whom I will be gracious, and will shew mercy on whom I will shew mercy.",
+      "question": "Moses asked, 'Show me thy glory'—and was given a glimpse. Israel, offered the same chance to ascend the mount, asked Moses to keep God at a distance. Joseph Smith later taught that Moses 'sought diligently to sanctify his people that they might behold the face of God; but they hardened their hearts and could not endure his presence.' Both invitations still stand. Which one are you living? What would sanctifying yourself to behold His face actually look like in your daily routine?",
       "response": ""
     }
   }
