@@ -5,7 +5,10 @@
       "Bash(git remote:*)",
       "WebFetch(domain:www.churchofjesuschrist.org)",
       "WebSearch",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }
