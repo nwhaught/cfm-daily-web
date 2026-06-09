@@ -60,7 +60,10 @@ structure in `puzzles.json`. Per-entry shape:
 Content guidance (match the voice of existing entries):
 - **scryptogram.solution** — a memorable verse, thematically tied to the week.
   Lowercase, keep original punctuation. Can be drawn from anywhere in scripture,
-  not just the week's block.
+  not just the week's block. **Bias toward quoting the entire verse**; only trim
+  to the memorable clause when the full verse would run long. A **200-character
+  soft cap** is enforced as a warning (see constraints) — over that, prefer a
+  coherent excerpt that still ends on a complete thought.
 - **prompt.reference / referenceText** — the actual Come Follow Me passage for
   that week; the `question` and `response` should engage it personally and
   pastorally, the way the existing June entries do (honest, warm, not preachy).
@@ -106,6 +109,9 @@ These are enforced automatically by `npm run check-preview` (see
    "plural" can't be detected reliably. When you see this warning, judge it
    yourself: verbs (OBEYS) and words like CROSS/BRASS/CHAOS are fine; plural
    nouns (SIGNS, IDOLS, WALLS) are not. Pick a different word if it's a plural.
+5. **Scryptogram solution ≤ 200 characters** — a **soft cap** flagged as a
+   **warning**. Bias toward including the whole verse; when the full verse
+   exceeds the cap, trim to a coherent excerpt that ends on a complete thought.
 
 When generating a cipher, the easiest reliable method: produce a random
 permutation of A–Z, then verify it's a derangement with no 3-letter consecutive

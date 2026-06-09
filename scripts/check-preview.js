@@ -18,6 +18,8 @@
  *     (checked against puzzles.json history AND earlier preview entries)
  *   - Wordle word is not an obvious plural ending in "S"           [warning]
  *     ("plural" can't be detected reliably, so a human/the skill decides)
+ *   - Scryptogram solution is at most 200 characters               [warning]
+ *     (soft cap — bias toward the whole verse, but trim if it runs long)
  *
  * Usage: node scripts/check-preview.js
  * Exit code 0 = clean (warnings allowed), 1 = one or more hard errors.
@@ -91,6 +93,15 @@ for (const [date, puzzle] of previewEntries) {
     for (const k of ['reference', 'referenceText', 'question', 'response']) {
       if (!(k in puzzle.prompt)) errors.push(`${tag} prompt missing "${k}"`);
     }
+  }
+
+  // --- Scryptogram solution length (soft cap) ---
+  const solution = scrypt && scrypt.solution;
+  if (typeof solution === 'string' && solution.length > 200) {
+    warnings.push(
+      `${tag} scryptogram solution is ${solution.length} chars (> 200) — ` +
+        `bias toward the whole verse, but trim if it runs long`
+    );
   }
 
   // --- Cipher rules ---
