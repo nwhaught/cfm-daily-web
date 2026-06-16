@@ -67,6 +67,9 @@ Content guidance (match the voice of existing entries):
 - **prompt.reference / referenceText** — the actual Come Follow Me passage for
   that week; the `question` and `response` should engage it personally and
   pastorally, the way the existing June entries do (honest, warm, not preachy).
+- **question style** — prefer **plainer, shorter questions** over long, literary,
+  multi-clause ones. Aim for a direct, **catechetical** feel (often a simple
+  two-part question) rather than writerly prose.
 - **wordle** — a 5-letter word resonant with the day's theme.
 - **cipher** — see constraints below; it must be a valid derangement permutation
   with no obvious runs.
