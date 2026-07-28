@@ -59,8 +59,8 @@ structure in `puzzles.json`. Per-entry shape:
 
 Content guidance (match the voice of existing entries):
 - **scryptogram.solution** — a memorable verse, thematically tied to the week.
-  Lowercase, keep original punctuation. Can be drawn from anywhere in scripture,
-  not just the week's block. **Bias toward quoting the entire verse**; only trim
+  Lowercase, keep original punctuation. Should be drawn from anywhere else in scripture,
+  not the week's block. **Bias toward quoting the entire verse**; only trim
   to the memorable clause when the full verse would run long. A **200-character
   soft cap** is enforced as a warning (see constraints) — over that, prefer a
   coherent excerpt that still ends on a complete thought.
