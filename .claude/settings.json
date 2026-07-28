@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run check-preview)",
+      "Bash(npm run validate)",
+      "WebFetch(domain:www.churchofjesuschrist.org)"
+    ]
+  }
+}

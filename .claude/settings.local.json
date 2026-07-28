@@ -13,7 +13,13 @@
       "Bash(npm run *)",
       "Bash(git reset *)",
       "Bash(git commit -q -m '@ *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(node -e \"const d=require\\('./data/puzzles.json'\\);const k=Object.keys\\(d\\).sort\\(\\);console.log\\('last:',k[k.length-1]\\)\")",
+      "Bash(node -e \"const d=require\\('./data/puzzles.json'\\);const k=Object.keys\\(d\\).sort\\(\\).slice\\(-3\\);for\\(const key of k\\){console.log\\('===',key,'==='\\);console.log\\(JSON.stringify\\(d[key],null,2\\)\\)}\")",
+      "Skill(fewer-permission-prompts)",
+      "Skill(fewer-permission-prompts:*)",
+      "Bash(node -e ' *)",
+      "Bash(node -e 'const d=require\\(\"./data/puzzle-preview.json\"\\);Object.keys\\(d\\).sort\\(\\).forEach\\(k=>console.log\\(k, d[k].scryptogram.hint.padEnd\\(14\\), d[k].scryptogram.solution.length\\)\\)')"
     ]
   }
 }
