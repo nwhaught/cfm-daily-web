@@ -133,6 +133,23 @@ const styles = {
     color: "#000",
   },
   cipherBottom: { fontSize: 24, display: "flex", alignItems: "center", justifyContent: "center" },
+  inlineInput: (focused, related) => ({
+    width: 22,
+    height: 26,
+    padding: 0,
+    textAlign: "center",
+    fontSize: 20,
+    fontWeight: "bold",
+    textTransform: "uppercase",
+    caretColor: "transparent",
+    border: "none",
+    borderBottom: "2px solid #000",
+    borderRadius: 0,
+    outline: "none",
+    color: "#000",
+    background: focused ? "#ffe58a" : related ? "#fff6cc" : "transparent",
+    ...monospace,
+  }),
   guessesGrid: { display: "flex", flexWrap: "wrap", gap: 12, marginTop: 10 },
   guessBox: { textAlign: "center" },
   input: {
@@ -154,30 +171,24 @@ const styles = {
 
 /* ---------------- Subcomponents ---------------- */
 
-function LetterCell({ enc, solvedChar }) {
+function LetterCell({ enc, solvedChar, inputProps, onCellClick }) {
   // enc: cipher letter or punctuation/space (bottom)
-  // solvedChar: top row string (for letters) OR punctuation char (for punctuation)
+  // solvedChar: current guess for this cipher letter (letters only)
+  // inputProps: props for the inline guess input (letters only)
   const isLetter = /[A-Z]/.test(enc);
-  // For punctuation, solvedChar should display same punctuation; for space, both are empty
-  const topDisplay = (() => {
-    if (!isLetter) {
-      // punctuation or space
-      return enc === " " ? "" : enc;
-    }
-    return solvedChar || "_";
-  })();
-
-  const bottomDisplay = (() => {
-    if (!isLetter) {
-      return enc === " " ? "" : enc;
-    }
-    return enc;
-  })();
+  const plain = enc === " " ? "" : enc;
 
   return (
     <span style={styles.letterCell} aria-hidden={false}>
-      <div style={styles.solvedTop}>{topDisplay}</div>
-      <div style={styles.cipherBottom}>{bottomDisplay}</div>
+      <div style={styles.solvedTop}>
+        {isLetter ? <input value={solvedChar} {...inputProps} /> : plain}
+      </div>
+      <div
+        style={{ ...styles.cipherBottom, cursor: isLetter ? "pointer" : "default" }}
+        onClick={onCellClick}
+      >
+        {plain}
+      </div>
     </span>
   );
 }
@@ -205,6 +216,8 @@ export default function Cryptogram({ selectedDate, puzzles }) {
   // Use useMemo to prevent recalculation on every render
   const cipherText = useMemo(() => encodeText(solution, cipherAlphabet), [solution, cipherAlphabet]);
   const cipherArray = useMemo(() => cipherText.split(""), [cipherText]);
+  // cipher letters in reading order, one entry per inline input above the puzzle
+  const letterPositions = useMemo(() => cipherArray.filter((c) => /[A-Z]/.test(c)), [cipherArray]);
 
   // unique cipher letters (A-Z only)
   const [uniqueLetters, setUniqueLetters] = useState([]);
@@ -212,6 +225,9 @@ export default function Cryptogram({ selectedDate, puzzles }) {
   const [cipherMapping, setCipherMapping] = useState({});
   // cookie/session storage refs
   const inputsRef = useRef({});
+  // refs for the inline inputs above the puzzle, indexed by letter position
+  const inlineRefs = useRef([]);
+  const [focusedPos, setFocusedPos] = useState(null);
   const [showHint, setShowHint] = useState(null);
   const [solved, setSolved] = useState(false);
   const [hasTriggeredConfetti, setHasTriggeredConfetti] = useState(false);
@@ -328,6 +344,68 @@ export default function Cryptogram({ selectedDate, puzzles }) {
     setCipherMapping((prev) => ({ ...prev, [cipherChar]: v }));
   };
 
+  /* --- Inline (above-puzzle) input handlers --- */
+  const focusPos = (pos) => {
+    const el = inlineRefs.current[pos];
+    if (el) el.focus();
+  };
+
+  // Next position after `pos` (wrapping) whose cipher letter has no guess yet.
+  // `mapping` is passed in so we can account for the letter just typed.
+  const nextEmptyPos = (pos, mapping) => {
+    const n = letterPositions.length;
+    for (let step = 1; step < n; step++) {
+      const p = (pos + step) % n;
+      if (!mapping[letterPositions[p]]) return p;
+    }
+    return null;
+  };
+
+  const enterInline = (pos, letter) => {
+    const cipherChar = letterPositions[pos];
+    const nextMapping = { ...cipherMapping, [cipherChar]: letter };
+    setMapping(cipherChar, letter);
+    const next = nextEmptyPos(pos, nextMapping);
+    if (next !== null) focusPos(next);
+  };
+
+  const handleInlineChange = (e, pos) => {
+    const current = cipherMapping[letterPositions[pos]] || "";
+    const typed = e.target.value.toUpperCase().replace(/[^A-Z]/g, "");
+    if (!typed) {
+      setMapping(letterPositions[pos], "");
+      return;
+    }
+    // If the box already had a letter, keep the newly typed one
+    const letter = typed.replace(current, "").slice(-1) || typed.slice(-1);
+    enterInline(pos, letter);
+  };
+
+  const handleInlineKeyDown = (e, pos) => {
+    const cipherChar = letterPositions[pos];
+    if (e.key === "ArrowRight") {
+      if (pos < letterPositions.length - 1) focusPos(pos + 1);
+      e.preventDefault();
+    } else if (e.key === "ArrowLeft") {
+      if (pos > 0) focusPos(pos - 1);
+      e.preventDefault();
+    } else if (e.key === "Backspace") {
+      if (cipherMapping[cipherChar]) {
+        setMapping(cipherChar, "");
+      } else if (pos > 0) {
+        focusPos(pos - 1);
+      }
+      e.preventDefault();
+    } else if (e.key === "Delete") {
+      setMapping(cipherChar, "");
+      e.preventDefault();
+    } else if (/^[a-zA-Z]$/.test(e.key) && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      // Handle letters here so typing over a filled box replaces it cleanly
+      enterInline(pos, e.key.toUpperCase());
+      e.preventDefault();
+    }
+  };
+
   const handleKeyDown = (e, cipherChar) => {
     const idx = uniqueLetters.indexOf(cipherChar);
     if (e.key === "ArrowRight") {
@@ -417,6 +495,8 @@ const revealHint = () => {
 
     // Split solution into words to prevent word breaks; each word mapped to encoded letters
     const words = solution.split(" ");
+    const focusedCipher = focusedPos !== null ? letterPositions[focusedPos] : null;
+    let pos = 0;
 
     return (
       <div style={styles.puzzleBox(solved)} aria-live="polite">
@@ -427,8 +507,33 @@ const revealHint = () => {
             <span key={wi} style={styles.wordWrap}>
               {encoded.map((enc, idx) => {
                 const isLetter = /[A-Z]/.test(enc);
-                const solvedChar = isLetter ? (cipherMapping[enc] || "") : ""; // if punctuation, we show enc directly in LetterCell
-                return <LetterCell key={idx} enc={enc} solvedChar={solvedChar} />;
+                if (!isLetter) return <LetterCell key={idx} enc={enc} />;
+                const p = pos++;
+                const inputProps = {
+                  ref: (el) => (inlineRefs.current[p] = el),
+                  "aria-label": `guess for ${enc} (position ${p + 1})`,
+                  autoComplete: "off",
+                  autoCorrect: "off",
+                  autoCapitalize: "characters",
+                  spellCheck: false,
+                  style: styles.inlineInput(focusedPos === p, focusedCipher === enc),
+                  onChange: (e) => handleInlineChange(e, p),
+                  onKeyDown: (e) => handleInlineKeyDown(e, p),
+                  onFocus: (e) => {
+                    setFocusedPos(p);
+                    e.target.select();
+                  },
+                  onBlur: () => setFocusedPos((cur) => (cur === p ? null : cur)),
+                };
+                return (
+                  <LetterCell
+                    key={idx}
+                    enc={enc}
+                    solvedChar={cipherMapping[enc] || ""}
+                    inputProps={inputProps}
+                    onCellClick={() => focusPos(p)}
+                  />
+                );
               })}
               {/* add a bit of space for the word gap (space in solution) */}
               {wi < words.length - 1 ? <span style={{ width: 6 }} /> : null}
@@ -472,7 +577,7 @@ const revealHint = () => {
           })}
         </div>
         <div style={styles.small}>
-          Tip: type a letter (A–Z). Use ← → to move, Backspace clears & moves left, Enter moves right.
+          Tip: type letters directly above the puzzle or in these boxes. Use ← → to move, Backspace clears & moves left, Enter moves right.
         </div>
 
         {duplicates.length > 0 && (
